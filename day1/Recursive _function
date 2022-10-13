@@ -1,0 +1,14 @@
+def func(n):
+    if n<=1:
+        return n
+    else:
+        return (func(n-2)+func(n-1))
+    
+n_terms =7
+for x in range(n_terms):
+    print(func(x))
+# Here the function takes a input value of n as 7
+# The goes to for loops and shows each and every element and then it goes to else block there 
+# Here it specifies the return block with some specified condition,after that there is a variable name 
+# It works like japanese doll complex problem will be break into subproblems using recursion
+# But here it has major draw back it it takes more amount of memory then it useses
